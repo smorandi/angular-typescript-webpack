@@ -12,9 +12,16 @@ export class StatusModel {
         return this.status;
     }
 
-    public getStatusFunc:() => string = () => {
-        console.log("StatusModel.getStatus() = ", this.status);
-        return this.status;
+    // public getStatusFunc:() => string = () => {
+    //     console.log("StatusModel.getStatus() = ", this.status);
+    //     return this.status;
+    // }
+
+    public getStatusFunc():() => string {
+        return () => {
+            console.log("StatusModel.getStatus() = ", this.status);
+            return this.status;
+        }
     }
 
     public setStatus(status:string) {
