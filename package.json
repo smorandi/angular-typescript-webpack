@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack --config webpack/webpack.dev.js --watch --NODE_ENV=dev",
     "test": "karma start --NODE_ENV=test",
-    "build": "webpack --config webpack/webpack.build.js --NODE_ENV=production",
+    "build": "webpack --config webpack/webpack.dev.js --NODE_ENV=dev",
     "postinstall": "typings i"
   },
   "author": "Brecht Billiet <billietbrecht@gmail.com>",
@@ -23,8 +23,8 @@
     "angular-mocks": "1.5.5",
     "babel-core": "6.9.0",
     "babel-istanbul": "0.8.0",
-    "browser-sync": "2.12.8",
-    "browser-sync-webpack-plugin": "1.0.1",
+    "browser-sync": "2.13.0",
+    "browser-sync-webpack-plugin": "1.1.0",
     "compression-webpack-plugin": "0.3.1",
     "css-loader": "0.23.1",
     "file-loader": "0.8.5",

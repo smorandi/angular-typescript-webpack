@@ -38,13 +38,13 @@ module.exports = function () {
             {pattern: 'node_modules/**/*.js', ignore: true}
         ],
 
-        preprocessors: {
-            '**/*.js': file => babel.transform(file.content, {sourceMap: true})
-        },
-        "testFramework": "jasmine",
-        postprocessor: webpackPostprocessor,
-        bootstrap: function () {
-            window.__moduleBundler.loadTests();
-        }
+        // preprocessors: {
+        //     '**/*.js': file => babel.transform(file.content, {sourceMap: true})
+        // },
+        // "testFramework": "jasmine",
+        // postprocessor: webpackPostprocessor,
+        // bootstrap: function () {
+        //     window.__moduleBundler.loadTests();
+        // }
     };
 };

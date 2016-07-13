@@ -15,6 +15,7 @@ export class TwitterApplicationComponent implements ng.IComponentOptions{
                     <ul class="nav navbar-nav">
                         <li><a href="#/" title="Tweets">Tweets</a></li>
                         <li><a href="#/about" title="About">About</a></li>
+                        <li><a href="#/message" title="Message">Message</a></li>
                     </ul>
                 </div>
             </div>
